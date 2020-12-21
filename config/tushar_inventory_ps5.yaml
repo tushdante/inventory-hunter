@@ -1,5 +1,5 @@
 ---
-refresh_interval: 25 # seconds
+refresh_interval: 5 # seconds
 max_price: 750 # dollars
 urls:
   - https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
@@ -14,4 +14,5 @@ urls:
   - https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/B225169V.html
   - https://direct.playstation.com/en-us/consoles/console/playstation5-console.3005816
   - https://www.target.com/p/playstation-5-console/-/A-81114595
+  - https://www.bestbuy.com/site/combo/ps5-consoles/96be4c49-d98e-47c6-9a68-291c646d0e47
 ...
