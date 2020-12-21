@@ -1,5 +1,5 @@
 ---
-refresh_interval: 2 # seconds
+refresh_interval: 25 # seconds
 max_price: 750 # dollars
 urls:
   - https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
@@ -9,4 +9,9 @@ urls:
   - https://www.newegg.com/p/N82E16868110292
   - https://www.newegg.com/p/N82E16868110293
   - https://www.walmart.com/ip/PlayStation-5-Console/363472942
+  - https://www.bhphotovideo.com/c/product/1595083-REG/sony_3005718_playstation_5_gaming_console.html
+  - https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/11108140.html
+  - https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/B225169V.html
+  - https://direct.playstation.com/en-us/consoles/console/playstation5-console.3005816
+  - https://www.target.com/p/playstation-5-console/-/A-81114595
 ...
