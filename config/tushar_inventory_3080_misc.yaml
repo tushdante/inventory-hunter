@@ -1,0 +1,16 @@
+---
+refresh_interval: 45 # seconds
+urls:
+
+  - https://www.bhphotovideo.com/c/product/1595985-REG/pny_technologies_vcg308010tfxppb_geforce_rtx_3080_10gb.html
+  - https://www.bhphotovideo.com/c/product/1592969-REG/zotac_zt_a30800d_10p_gaming_geforce_rtx_3080.html
+  - https://www.bhphotovideo.com/c/product/1593332-REG/gigabyte_gv_n3080eagle_oc_10gd_geforce_rtx_3080_eagle.html
+  - https://www.bhphotovideo.com/c/product/1593333-REG/gigabyte_gv_n3080gaming_oc_10gd_geforce_rtx_3080_gaming.html
+  - https://www.bhphotovideo.com/c/product/1593645-REG/msi_geforce_rtx_3080_gaming.html
+  - https://www.bhphotovideo.com/c/product/1593646-REG/msi_geforce_rtx_3080_ventus.html
+  - https://www.bhphotovideo.com/c/product/1593649-REG/asus_tuf_rtx3080_10g_gaming_tuf_gaming_geforce_rtx.html
+  - https://www.bhphotovideo.com/c/product/1593650-REG/asus_tuf_rtx3080_o10g_gaming_tuf_gaming_geforce_rtx.html
+  - https://www.gamestop.com/video-games/pc/components/graphics-cards/products/tuf-gaming-geforce-rtx-3080-graphics-card/11109446.html
+  - https://www.samsclub.com/p/pny-geforce-rtx3080-10gb-graphics-card/prod25090929
+  - https://www.samsclub.com/p/pny-geforce-3080-10gb-xlr8-gaming-card/prod25090930
+...
