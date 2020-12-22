@@ -1,44 +1,38 @@
 from scraper.common import ScrapeResult, Scraper, ScraperFactory
 
 
-class WalmartScrapeResult(ScrapeResult):
+class ToysRUsScrapeResult(ScrapeResult):
     def parse(self):
         alert_subject = 'In Stock'
         alert_content = ''
 
-        # detect captcha
-        tag = self.soup.body.find('div', id='px-captcha')
-        if tag:
-            self.captcha = True
-            return
-
         # get name of product
-        tag = self.soup.body.select_one('h1.prod-ProductTitle.prod-productTitle-buyBox.font-bold')
+        tag = self.soup.body.select_one('.b-product_details-name')
         if tag:
             alert_content += tag.text.strip() + '\n'
         else:
             self.logger.warning(f'missing title: {self.url}')
 
         # get listed price
-        tag = self.soup.body.select_one('section.prod-PriceSection div.prod-PriceHero span.price-group')
-        price_str = self.set_price(tag)
+        tag = self.soup.body.select_one('.b-price-value.js-sales-price-value')
+        price_str = self.set_price(tag.getText())
         if price_str:
             alert_subject = f'In Stock for {price_str}'
         else:
             self.logger.warning(f'missing price: {self.url}')
 
         # check for add to cart button
-        tag = self.soup.body.select_one('section.prod-ProductCTA.primaryProductCTA-marker button')
-        if tag and 'add to cart' in str(tag).lower():
+        tag = self.soup.body.select_one('li.b-product_status')
+        if tag and 'in stock' in str(tag).lower():
             self.alert_subject = alert_subject
             self.alert_content = f'{alert_content.strip()}\n{self.url}'
 
 
 @ScraperFactory.register
-class WalmartScraper(Scraper):
+class ToysRUsScraper(Scraper):
     @staticmethod
     def get_domain():
-        return 'walmart'
+        return 'toysrus'
 
     @staticmethod
     def get_driver_type():
@@ -46,4 +40,4 @@ class WalmartScraper(Scraper):
 
     @staticmethod
     def get_result_type():
-        return WalmartScrapeResult
+        return ToysRUsScrapeResult
