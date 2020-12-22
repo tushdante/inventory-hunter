@@ -103,15 +103,15 @@ fi
 
 docker_ps_cmd="docker ps -a -f name=$container_name"
 
-# echo "\$ $docker_run_cmd"
-eval $docker_run_cmd
+echo "\$ $docker_run_cmd"
+# eval $docker_run_cmd
 echo
 echo "started docker container named $container_name"
 echo
 echo "view the status of this container using the following command:"
 echo "\$ $docker_ps_cmd"
 echo
-eval $docker_ps_cmd
+# eval $docker_ps_cmd
 echo
 echo "view logs for this container using the following command:"
 echo "\$ docker logs -f $container_name"
