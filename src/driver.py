@@ -70,6 +70,7 @@ class SeleniumDriver(Driver):
         self.options.add_argument(f'--user-data-dir={self.selenium_path}')
         self.options.add_argument('--window-position=0,0')
         self.options.add_argument('--window-size=1920,1080')
+        self.options.add_argument('--disable-dev-shm-usage')
 
     def get(self, url) -> HttpGetResponse:
         # headless chromium crashes somewhat regularly...

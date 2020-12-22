@@ -1,0 +1,5 @@
+version: "3.7"
+services:
+  inventory_hunter:
+    build: .
+    image: tushar/inventory-hunter

@@ -1,0 +1,65 @@
+version: "3.8"
+services:
+  3080_newegg:
+    extends:
+      file: docker-compose-common.yaml
+      service: inventory_hunter
+    image: tushar/inventory-hunter:3080_newegg
+    volumes:
+      - ./data/tushar_inventory_3080:/data
+      - ./log/tushar_inventory_3080.txt:/log.txt
+      - ./config/tushar_inventory_3080.yaml:/config.yaml
+      - ./config/alerters.yaml:/alerters.yaml
+    command: --alerter email --alerter-config /alerters.yaml
+  
+  3080_amazon:
+    extends:
+      file: docker-compose-common.yaml
+      service: inventory_hunter
+    image: tushar/inventory-hunter:3080_amazon
+    volumes:
+      - ./data/tushar_inventory_3080_amazon:/data
+      - ./log/tushar_inventory_3080_amazon.txt:/log.txt
+      - ./config/tushar_inventory_3080_amazon.yaml:/config.yaml
+      - ./config/alerters.yaml:/alerters.yaml
+    command: --alerter email --alerter-config /alerters.yaml
+  
+  3080_bestbuy:
+    extends:
+      file: docker-compose-common.yaml
+      service: inventory_hunter
+    image: tushar/inventory-hunter:3080_bestbuy
+    volumes:
+      - ./data/tushar_inventory_3080_bestbuy:/data
+      - ./log/tushar_inventory_3080_bestbuy.txt:/log.txt
+      - ./config/tushar_inventory_3080_bestbuy.yaml:/config.yaml
+      - ./config/alerters.yaml:/alerters.yaml
+    command: --alerter email --alerter-config /alerters.yaml
+
+  3080_misc:
+    extends:
+      file: docker-compose-common.yaml
+      service: inventory_hunter
+    image: tushar/inventory-hunter:3080_misc
+    volumes:
+      - ./data/tushar_inventory_3080_misc:/data
+      - ./log/tushar_inventory_3080_misc.txt:/log.txt
+      - ./config/tushar_inventory_3080_misc.yaml:/config.yaml
+      - ./config/alerters.yaml:/alerters.yaml
+    command: --alerter email --alerter-config /alerters.yaml
+  
+  ps5:
+    extends:
+      file: docker-compose-common.yaml
+      service: inventory_hunter
+    image: tushar/inventory-hunter:3080_ps5
+    volumes:
+      - ./data/tushar_inventory_ps5:/data
+      - ./log/tushar_inventory_ps5.txt:/log.txt
+      - ./config/tushar_inventory_ps5.yaml:/config.yaml
+      - ./config/alerters.yaml:/alerters.yaml
+    command: --alerter email --alerter-config /alerters.yaml
+  
+  # 3080_amazon:
+  #   build: .
+   # command: /bin/sh -c "/src/docker_run.bash -c /config/tushar_inventory_3080_amazon.yaml -q /config/alerters.yaml"
