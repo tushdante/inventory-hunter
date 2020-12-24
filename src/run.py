@@ -1,5 +1,6 @@
 import argparse
 import logging
+import logging.handlers
 import pathlib
 import sys
 
@@ -38,7 +39,15 @@ log_level = logging.DEBUG if args.verbose else logging.INFO
 logging.basicConfig(level=log_level, format=log_format, style='{')
 if args.log:
     logger = logging.getLogger()
-    handler = logging.FileHandler(args.log)
+    #handler = logging.FileHandler(args.log)
+    # replace Filehandler with RotatingFileHanlder
+    handler = logging.handlers.RotatingFileHandler(args.log,
+                                                   mode='a',
+                                                   maxBytes=5*1024*1024,
+                                                   backupCount=2,
+                                                   encoding=None,
+                                                   delay=0
+                                                   )
     handler.setFormatter(logging.Formatter(log_format, style='{'))
     logger.addHandler(handler)
 logging.info(f'starting {version} with args: {" ".join(sys.argv)}')
