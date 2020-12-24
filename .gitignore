@@ -7,3 +7,4 @@ __pycache__
 config/alerters.yaml
 data/
 log/
+*.code_workspace
