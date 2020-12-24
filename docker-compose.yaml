@@ -1,5 +1,6 @@
-version: "3.8"
+version: "2"
 services:
+
   3080_newegg:
     extends:
       file: docker-compose-common.yaml
