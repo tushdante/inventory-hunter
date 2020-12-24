@@ -1,5 +1,5 @@
 ---
-refresh_interval: 45 # seconds
+refresh_interval: 2 # seconds
 urls:
   - https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
   - https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M

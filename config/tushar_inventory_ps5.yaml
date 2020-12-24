@@ -1,5 +1,5 @@
 ---
-refresh_interval: 5 # seconds
+refresh_interval: 2 # seconds
 max_price: 750 # dollars
 urls:
   - https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG
