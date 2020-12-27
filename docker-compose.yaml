@@ -9,6 +9,7 @@ services:
     volumes:
       - ./data/tushar_inventory_3080:/data
       - ./log/tushar_inventory_3080.txt:/log.txt
+      - ./log/tushar_inventory_3080.txt:/log.1.txt
       - ./config/tushar_inventory_3080.yaml:/config.yaml
       - ./config/alerters.yaml:/alerters.yaml
     command: --alerter email --alerter-config /alerters.yaml
@@ -21,6 +22,7 @@ services:
     volumes:
       - ./data/tushar_inventory_3080_amazon:/data
       - ./log/tushar_inventory_3080_amazon.txt:/log.txt
+      - ./log/tushar_inventory_3080_amazon.txt:/log.1.txt
       - ./config/tushar_inventory_3080_amazon.yaml:/config.yaml
       - ./config/alerters.yaml:/alerters.yaml
     command: --alerter email --alerter-config /alerters.yaml
@@ -33,6 +35,7 @@ services:
     volumes:
       - ./data/tushar_inventory_3080_bestbuy:/data
       - ./log/tushar_inventory_3080_bestbuy.txt:/log.txt
+      - ./log/tushar_inventory_3080_bestbuy.txt:/log.1.txt
       - ./config/tushar_inventory_3080_bestbuy.yaml:/config.yaml
       - ./config/alerters.yaml:/alerters.yaml
     command: --alerter email --alerter-config /alerters.yaml
@@ -45,6 +48,7 @@ services:
     volumes:
       - ./data/tushar_inventory_3080_misc:/data
       - ./log/tushar_inventory_3080_misc.txt:/log.txt
+      - ./log/tushar_inventory_3080_misc.txt:/log.1.txt
       - ./config/tushar_inventory_3080_misc.yaml:/config.yaml
       - ./config/alerters.yaml:/alerters.yaml
     command: --alerter email --alerter-config /alerters.yaml
@@ -57,6 +61,7 @@ services:
     volumes:
       - ./data/tushar_inventory_ps5:/data
       - ./log/tushar_inventory_ps5.txt:/log.txt
+      - ./log/tushar_inventory_ps5.txt:/log.1.txt
       - ./config/tushar_inventory_ps5.yaml:/config.yaml
       - ./config/alerters.yaml:/alerters.yaml
     command: --alerter email --alerter-config /alerters.yaml
