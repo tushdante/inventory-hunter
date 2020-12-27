@@ -44,7 +44,7 @@ if args.log:
     handler = logging.handlers.RotatingFileHandler(args.log,
                                                    mode='a',
                                                    maxBytes=5*1024*1024,
-                                                   backupCount=2,
+                                                   backupCount=1,
                                                    encoding=None,
                                                    delay=0
                                                    )
