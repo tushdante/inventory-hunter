@@ -1,27 +1,27 @@
 ---
 refresh_interval: 2 # seconds
+max_price: 850 # dollars
 urls:
   - https://www.amazon.com/ASUS-Graphics-DisplayPort-Military-Grade-Certification/dp/B08HH5WF97
   - https://www.amazon.com/MSI-GeForce-RTX-3080-10G/dp/B08HR7SV3M
-  - https://www.amazon.com/NVIDIA-GeForce-Graphics-DisplayPort-Bearings/dp/B08NQ78BCN
   - https://www.amazon.com/dp/B08HR3Y5GQ/
-  - https://www.amazon.com/dp/B08HBR7QBM?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HBTJMLJ?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HH5WF97?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HHDP9DW?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HJS2JLJ?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HJTH61J?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR3DPGW?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR3Y5GQ?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR4RJ3Q?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR55YB5?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR5SXPS?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR6FMF3?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HR7SV3M?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08HVV2P4Z?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08J6F174Z?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08KGZVKXM?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08KJ3VKLQ?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/dp/B08QW8BKDV?tag=nismain-20&amp;linkCode=ogi&amp;th=1&amp;psc=1
-  - https://www.amazon.com/gp/offer-listing/B08HJNKT3P?SubscriptionId=AKIAJF4X3QDDEUEKC7FA&amp;tag=nismain-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=5143&amp;creativeASIN=B08HJNKT3P&amp;m=ATVPDKIKX0DER
+  - https://www.amazon.com/dp/B08HBR7QBM
+  - https://www.amazon.com/dp/B08HBTJMLJ
+  - https://www.amazon.com/dp/B08HH5WF97
+  - https://www.amazon.com/dp/B08HHDP9DW
+  - https://www.amazon.com/dp/B08HJS2JLJ
+  - https://www.amazon.com/dp/B08HJTH61J
+  - https://www.amazon.com/dp/B08HR3DPGW
+  - https://www.amazon.com/dp/B08HR3Y5GQ
+  - https://www.amazon.com/dp/B08HR4RJ3Q
+  - https://www.amazon.com/dp/B08HR55YB5
+  - https://www.amazon.com/dp/B08HR5SXPS
+  - https://www.amazon.com/dp/B08HR6FMF3
+  - https://www.amazon.com/dp/B08HR7SV3M
+  - https://www.amazon.com/dp/B08HVV2P4Z
+  - https://www.amazon.com/dp/B08J6F174Z
+  - https://www.amazon.com/dp/B08KGZVKXM
+  - https://www.amazon.com/dp/B08KJ3VKLQ
+  - https://www.amazon.com/dp/B08QW8BKDV
+  - https://www.amazon.com/dp/B08HJNKT3P
 ...
